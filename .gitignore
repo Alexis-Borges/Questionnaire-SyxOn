@@ -1,0 +1,9 @@
+node_modules
+dist
+.env
+*.local
+pdf_page_*.png
+create.cjs
+create3.cjs
+script2.cjs
+.claude/
