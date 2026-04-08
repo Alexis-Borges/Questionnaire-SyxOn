@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function StepBienvenue({ onNext }) {
   useEffect(() => {
-    const timer = setTimeout(onNext, 4000);
+    const timer = setTimeout(onNext, 2500);
     return () => clearTimeout(timer);
   }, [onNext]);
 
@@ -29,7 +29,7 @@ export default function StepBienvenue({ onNext }) {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1.2, ease: 'easeInOut' }}
+          transition={{ duration: 0.8, ease: 'easeInOut' }}
           style={{
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             gap: 'clamp(8px, 2vw, 12px)', flexWrap: 'wrap',

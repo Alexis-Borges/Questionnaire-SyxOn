@@ -3,16 +3,16 @@ import { motion } from 'framer-motion';
 
 export default function StepIntro({ onNext }) {
   useEffect(() => {
-    const timer = setTimeout(onNext, 11000);
+    const timer = setTimeout(onNext, 7000);
     return () => clearTimeout(timer);
   }, [onNext]);
 
-  const fadeDuration = 0.8;
+  const fadeDuration = 0.6;
   const line1 = { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { delay: 0, duration: fadeDuration, ease: 'easeInOut' } } };
-  const word1 = { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { delay: 3, duration: fadeDuration, ease: 'easeInOut' } } };
-  const word2 = { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { delay: 4.5, duration: fadeDuration, ease: 'easeInOut' } } };
-  const word3 = { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { delay: 6, duration: fadeDuration, ease: 'easeInOut' } } };
-  const line3 = { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { delay: 7.5, duration: fadeDuration, ease: 'easeInOut' } } };
+  const word1 = { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { delay: 1.5, duration: fadeDuration, ease: 'easeInOut' } } };
+  const word2 = { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { delay: 2.5, duration: fadeDuration, ease: 'easeInOut' } } };
+  const word3 = { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { delay: 3.5, duration: fadeDuration, ease: 'easeInOut' } } };
+  const line3 = { hidden: { opacity: 0 }, visible: { opacity: 1, transition: { delay: 4.5, duration: fadeDuration, ease: 'easeInOut' } } };
 
   return (
     <div
